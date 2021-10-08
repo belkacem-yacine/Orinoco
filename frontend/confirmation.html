@@ -17,12 +17,14 @@
             <header class="header">
                 <img src="./images/orinoco logo.png" alt="logo orinoco" class="header__img">
                 <nav class="header__nav-menu">
+                    <a href="index.html" class="header__nav-menu--home">Accueil</a>
                     <a href="panier.html">Panier</a>
                 </nav>
             </header>
-            <section>
-                <ul class="list-item" id="list-item">
-                </ul>
+            <section class="confirm">
+                <p>Toute l'équipe Orinoco vous remerci de votre commande!</p>
+                <p>Votre commande,dont l'identifiant est le <p id="result"></p>a bien été prise en compte pour un prix total de <p id="totalPriceBasket"></p> </p>
+                <a href="index.html"><button class="confirm__btn">Retourner à l'accueil</button></a>
             </section>
             <footer class="footer">
                 <h2 class="footer__heading">Orinoco</h2>
@@ -31,8 +33,7 @@
                     <a href="#" class="footer__paragraph"><p>Contactez-nous</p></a>
                 </div>
             </footer>
+            <script src="./class.js"></script>
+            <script src="./confirmation.js"></script>
         </main>
-        <script src="./class.js"></script>
-        <script src="./index.js"></script>
     </body>
-</html>

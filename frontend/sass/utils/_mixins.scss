@@ -1,0 +1,29 @@
+@mixin button {
+    background: linear-gradient(350deg, $color-tertiary, $color-secondary);
+    border-radius: 25px;
+    border: $color-primary;
+    padding: 10px 25px;
+    box-shadow: 6px 6px 5px lightgray;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-weight: bold;
+}
+
+@mixin media-tablette {
+    @media screen and (min-width: map-get($breakpoints,tablette )) {
+        @content;
+    }
+}
+
+@mixin little-desktop {
+    @media screen and (min-width: map-get($breakpoints,little-desktop)) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints,desktop )) {
+        @content;
+    }
+}

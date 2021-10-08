@@ -1,0 +1,28 @@
+
+.item__btn , .form__btn, .clear-btn, .deleteLine-btn, .confirm__btn
+{
+    @include button;
+    align-self: center;
+    margin: 20px 0px;
+    color: #fff;
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(350deg, lighten($color-tertiary, 5), lighten($color-secondary, 5));
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+        border-radius: 25px;
+        box-shadow: 6px 6px 5px gray;
+    }
+}

@@ -1,0 +1,29 @@
+.form
+{
+    width: 95%;
+    height: auto;
+    margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 20px;
+
+    &__info
+    {
+        padding-top: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        @include media-tablette
+        {
+            width: 17%;
+            margin: 10px;
+        }
+    }
+
+    &__input
+    {
+        height: 25px;
+    }
+}
