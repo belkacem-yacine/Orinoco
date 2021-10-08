@@ -1,0 +1,24 @@
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3e9f1;
+    font-weight: bold;
+    padding: 0px 20px;
+
+    &__img
+    {
+        text-align: center;
+        width: 180px;
+
+        @include media-tablette{
+            width: 230px;
+        }
+    }
+
+    &__nav-menu--home
+    {
+        margin: 15px;
+    }
+}

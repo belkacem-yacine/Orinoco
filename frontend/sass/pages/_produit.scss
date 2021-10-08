@@ -1,0 +1,57 @@
+.item
+{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-primary;
+    margin: 30px 25px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 5px lightgray;
+
+    @include media-tablette{
+        width: 95%;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__img
+    {
+        width: 100%;
+        border-radius: 25px;
+        @include media-tablette{
+            width: 400px;
+            border-radius: 25px;
+            margin: 15px;
+            
+        }
+    }
+
+    &__legend
+    {
+        margin: -2px 0px 5px 13px;
+    }
+
+    &__heading
+    {
+        font-size: 15px;
+    }
+
+    &__price
+    {
+        padding-right: 25px;
+    }
+}
+
+.item-info
+{
+
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+
+    @include media-tablette{
+        justify-content: space-around;
+        margin: 0px 15px;
+    }
+
+}
