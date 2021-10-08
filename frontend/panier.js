@@ -4,6 +4,7 @@ showBasket(listBasket)
 //Afficher les produits et leur prix dans le panier et pouvoir interagir avec
 function showBasket (listBasket){
     const clearBasket = document.getElementById("clearBasket")
+    const form = document.getElementById("form")
     const addLine = document.getElementById("addLine");
     if (listBasket == 0){
         clearBasket.style.visibility = 'hidden';
@@ -12,6 +13,7 @@ function showBasket (listBasket){
             <td>Le panier est vide</td>
         </tr>
             `
+        form.style.visibility = 'hidden';
     };
 
     let basket = new Basket(listBasket);
@@ -27,7 +29,7 @@ function showBasket (listBasket){
                             <td class="table__case--modif">
                                 <div>
                                     <input type="button" onclick="document.location.reload(false)"  value="-" class="remove" data-id="${lignedelarticle._id}">
-                                    <label for="quantity"><input name="quantity" class="quantity-fields" type="number" value="${lignedelarticle.quantity}"></label>
+                                    <label for="quantity"><input name="quantity" class="quantity-fields" type="number" disabled value="${lignedelarticle.quantity}"></label>
                                     <input type="button" onclick="document.location.reload(false)" value="+" class="add" data-id="${lignedelarticle._id}">
                                 </div>
                             </td>

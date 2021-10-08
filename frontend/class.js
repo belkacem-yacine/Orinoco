@@ -112,7 +112,11 @@ class Basket {
         let index = this.tableBasket.map(function(e) { return e._id; }).indexOf(lineBasket_id);
         let lineArticle = this.tableBasket[index]
         lineArticle.quantity --
-        this.saveBasket(this.tableBasket)
+        if (lineArticle.quantity <= 0) {
+            this.deleteLineArticle(lineBasket_id)
+        }else{
+            this.saveBasket(this.tableBasket)
+        }
     }
     
     //pour la suppression d'une ligne produit dans le panier
