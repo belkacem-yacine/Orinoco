@@ -13,6 +13,7 @@ a {
 
 h1, h2, .confirm {
   font-family: "Shrikhand", cursive;
+  text-align: center;
 }
 
 .item__btn, .form__btn, .clear-btn, .deleteLine-btn, .confirm__btn {
@@ -77,6 +78,9 @@ h1, h2, .confirm {
   justify-content: space-around;
   line-height: 20px;
 }
+.form__heading {
+  text-align: center;
+}
 .form__info {
   padding-top: 8px;
   display: flex;
@@ -99,12 +103,10 @@ h1, h2, .confirm {
   padding-left: 17px;
   height: 120px;
 }
-
 .footer__heading {
   font-size: large;
   padding-top: 17px;
 }
-
 .footer__container {
   line-height: 12px;
   font-weight: bold;
@@ -119,6 +121,9 @@ h1, h2, .confirm {
     justify-content: space-around;
     flex-wrap: wrap;
   }
+}
+.list-item__heading {
+  text-align: center;
 }
 
 .all-item {
@@ -213,16 +218,15 @@ h1, h2, .confirm {
 .table {
   width: 100%;
   height: 200px;
-  margin: 20px auto;
+  margin: -20px 0px 20px 0px;
   text-align: center;
   border-collapse: collapse;
   background-color: #f3e9f1;
 }
 .table__heading {
   background-color: #f3e9f1;
-  font-weight: bold;
-  height: 30px;
-  padding-top: 10px;
+  padding: 15px 0px;
+  text-align: center;
 }
 .table__case {
   font-size: smaller;
@@ -252,10 +256,15 @@ h1, h2, .confirm {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 44px;
-  height: auto;
+  margin: 50px;
   font-size: larger;
   padding: 10px;
+  height: 414px;
+}
+@media screen and (min-width: 730px) {
+  .confirm {
+    height: 396px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

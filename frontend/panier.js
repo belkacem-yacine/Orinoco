@@ -4,7 +4,7 @@ showBasket(listBasket)
 //Afficher les produits et leur prix dans le panier et pouvoir interagir avec
 function showBasket (listBasket){
     const clearBasket = document.getElementById("clearBasket")
-    const form = document.getElementById("form")
+    const info = document.getElementById("info")
     const addLine = document.getElementById("addLine");
     if (listBasket == 0){
         clearBasket.style.visibility = 'hidden';
@@ -13,7 +13,7 @@ function showBasket (listBasket){
             <td>Le panier est vide</td>
         </tr>
             `
-        form.style.visibility = 'hidden';
+        info.style.visibility = 'hidden';
     };
 
     let basket = new Basket(listBasket);

@@ -8,6 +8,11 @@
     justify-content: space-around;
     line-height: 20px;
 
+    &__heading
+    {
+        text-align: center;
+    }
+
     &__info
     {
         padding-top: 8px;

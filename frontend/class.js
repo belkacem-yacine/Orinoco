@@ -78,6 +78,7 @@ class Basket {
             let lineArticle = this.tableBasket[index]
             lineArticle.quantity += lineBasket.quantity
         }else{this.tableBasket.push(lineBasket)}
+        alert("Votre article à bien été ajouté au panier")
         this.saveBasket(this.tableBasket)
     }
 

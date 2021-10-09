@@ -5,8 +5,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 44px;
-    height: auto;
+    margin: 50px;
     font-size: larger;
     padding: 10px;
+    height: 414px;
+
+    @include media-tablette
+    {
+        height: 396px;
+    }
 }

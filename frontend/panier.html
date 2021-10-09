@@ -15,19 +15,21 @@
     <body>
         <main>
             <header class="header">
-                <img src="./images/orinoco logo.png" alt="logo orinoco" class="header__img">
+                <img src="./images/orinocologo.png" alt="logo orinoco" class="header__img">
                 <nav class="header__nav-menu">
                     <a href="index.html">Accueil</a>
                 </nav>
             </header>
             <section class="table-basket">
+                <h2 class="table__heading">Récapitulatif de votre panier</h2>
                 <table class="table">
-                    <caption class="table__heading">Récapitulatif de votre panier</caption>
                     <thead class="table__line bold">
-                        <td class="table__case">Produit</td>
-                        <td class="table__case">Prix</td>
-                        <td class="table__case">Quantité</td>
-                        <td class="table__case">Total</td>
+                        <tr>
+                            <td class="table__case">Produit</td>
+                            <td class="table__case">Prix</td>
+                            <td class="table__case">Quantité</td>
+                            <td class="table__case">Total</td>
+                        </tr>
                     </thead>
                     <tbody class="table__line white" id="addLine">
                     </tbody>
@@ -36,8 +38,9 @@
                 </table>
                     <button id="clearBasket" class="clear-btn" onclick="document.location.reload(false)">Vider le panier</button>
             </section>
-            <section>
-                <form action="" method="GET" name="information_acheteur" class="form" id="form">
+            <section id="info">
+                <h2 class="form__heading">Vos informations</h2>
+                <form method="GET" name="information_acheteur" class="form" id="form">
                     <div class="form__info">
                         <label for="lastName" class="bold value">Nom</label>
                         <input type="text" name="lastName" id="lastName" class="form__input" required>

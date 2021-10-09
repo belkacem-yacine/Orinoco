@@ -24,7 +24,7 @@ function addCards(jsonListItem) {
                         <a href="./produit.html?_id=${item._id}">
                             <img src="${item.imageUrl}" alt="${item.name}" class="all-item__image">
                             <div class="all-item__legend">
-                                <h1 class="all-item__heading">${item.name}</h1>
+                                <h2 class="all-item__heading">${item.name}</h2>
                                 <p class="all-item__desc">${item.description}</p>
                                 <p class="all-item__price">${item.getFormatedPrice()}</p>
                             </div>
