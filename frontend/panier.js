@@ -86,7 +86,7 @@ document
 document.querySelector(`.form button `).addEventListener("click", function(e){
     e.preventDefault();
     var valid = true;
-    for(let input of document.querySelectorAll(".form button")){
+    for(let input of document.querySelectorAll(".form input")){
         valid &= input.reportValidity();
         if(!valid){
             break;

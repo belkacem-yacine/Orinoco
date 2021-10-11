@@ -14,7 +14,7 @@ fetch (newUrl)
         addCard(jsonItem);
     })
     .catch(function(err) {
-        console.log(`Une erreur est survenue` + error.message);
+        console.log(`Une erreur est survenue` + err.message);
     });
 
 
